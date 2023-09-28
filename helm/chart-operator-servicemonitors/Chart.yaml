@@ -1,8 +1,8 @@
 apiVersion: v2
 description: Chart Operator ServiceMonitors
 name: chart-operator-servicemonitors
-version: [[ .Version ]]
-appVersion: [[ .AppVersion ]]
+version: 1.0.0
+appVersion: 1.0.0
 annotations:
   application.giantswarm.io/team: "honeybadger"
 home: https://github.com/giantswarm/chart-operator-servicemonitors

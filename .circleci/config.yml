@@ -8,6 +8,7 @@ workflows:
     jobs:
       - architect/push-to-app-catalog:
           context: architect
+          executor: "app-build-suite"
           name: "push-to-default-app-catalog"
           app_catalog: "default-catalog"
           app_catalog_test: "default-test-catalog"
@@ -16,3 +17,5 @@ workflows:
             # Trigger the job also on git tag.
             tags:
               only: /^v.*/
+          persist_chart_archive: true
+          push_to_oci_registry: true
