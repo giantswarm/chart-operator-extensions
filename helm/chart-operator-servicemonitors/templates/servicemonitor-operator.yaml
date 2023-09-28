@@ -3,7 +3,6 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   labels:
-    application.giantswarm.io/team: {{ .Values.team }}
     {{- include "chart-operator-servicemonitors.labels" . | nindent 4 }}
   name: {{ include "chart-operator-servicemonitors.name"  . }}
   namespace: giantswarm
