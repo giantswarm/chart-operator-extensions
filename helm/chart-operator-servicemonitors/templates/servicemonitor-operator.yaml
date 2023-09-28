@@ -12,7 +12,7 @@ spec:
   - honorLabels: true
     interval: {{ .Values.operator.scrapeInterval }}
     path: /metrics
-    port: metrics
+    targetPort: {{ .Values.operator.targetPort }}
     scrapeTimeout: {{ .Values.operator.scrapeTimeout }}
     {{- if .Values.operator.metricRelabelings }}
     metricRelabelings:

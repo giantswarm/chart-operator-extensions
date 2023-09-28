@@ -5,6 +5,7 @@ disabled: false
 operator:
   scrapeInterval: 60s
   scrapeTimeout: 45s
+  targetPort: "8000"
   relabelings: {}
   metricRelabelings: {}
   selectors:
