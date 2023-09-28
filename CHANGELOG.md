@@ -9,8 +9,6 @@ and this project's packages adheres to [Semantic Versioning](http://semver.org/s
 
 ## [1.0.0] - 2023-09-28
 
-## [1.0.0] - 2023-09-28
-
 ### Added
 
 - Create ServiceMonitors to scrape `chart-operator`
