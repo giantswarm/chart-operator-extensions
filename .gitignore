@@ -1,0 +1,7 @@
+# ignore vim swap files
+*.swp
+
+.idea
+
+# build result
+/chart-operator-servicemonitors*

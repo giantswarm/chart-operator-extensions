@@ -1,0 +1,15 @@
+apiVersion: v2
+description: Chart Operator ServiceMonitors
+name: chart-operator-servicemonitors
+version: [[ .Version ]]
+appVersion: [[ .AppVersion ]]
+annotations:
+  application.giantswarm.io/team: "honeybadger"
+home: https://github.com/giantswarm/chart-operator-servicemonitors
+keywords:
+  - monitoring
+restrictions:
+  clusterSingleton: true
+  namespaceSingleton: true
+  fixedNamespace: giantswarm
+type: application

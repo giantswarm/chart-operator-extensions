@@ -1,0 +1,31 @@
+{{- if not .Values.disabled }}
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  labels:
+    application.giantswarm.io/team: {{ .Values.team }}
+    {{- include "chart-operator-servicemonitors.labels" . | nindent 4 }}
+  name: {{ include "chart-operator-servicemonitors.name"  . }}
+  namespace: giantswarm
+spec:
+  endpoints:
+  - honorLabels: true
+    interval: {{ .Values.operator.scrapeInterval }}
+    path: /metrics
+    port: metrics
+    scrapeTimeout: {{ .Values.operator.scrapeTimeout }}
+    {{- if .Values.operator.metricRelabelings }}
+    metricRelabelings:
+    {{- tpl (toYaml .Values.operator.metricRelabelings | nindent 4) . }}
+    {{- end }}
+    {{- if .Values.operator.relabelings }}
+    relabelings:
+    {{- tpl (toYaml .Values.operator.relabelings | nindent 4) . }}
+    {{- end }}
+  namespaceSelector:
+    matchNames:
+      - giantswarm
+  selector:
+    matchLabels:
+      {{- tpl (toYaml .Values.operator.selectors | nindent 6) . }}
+{{- end }}

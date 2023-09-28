@@ -1,0 +1,12 @@
+team: honeybadger
+
+disabled: false
+
+operator:
+  scrapeInterval: 60s
+  scrapeTimeout: 45s
+  relabelings: {}
+  metricRelabelings: {}
+  selectors:
+    app: chart-operator
+    app.kubernetes.io/name: chart-operator
