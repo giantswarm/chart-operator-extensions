@@ -7,8 +7,11 @@ and this project's packages adheres to [Semantic Versioning](http://semver.org/s
 
 ## [Unreleased]
 
+## [1.0.0] - 2023-09-28
+
 ### Added
 
 - Create ServiceMonitors to scrape `chart-operator`
 
-[Unreleased]: https://github.com/giantswarm/chart-operator-servicemonitors/compare/v0.0.0...HEAD
+[Unreleased]: https://github.com/giantswarm/chart-operator-servicemonitors/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/giantswarm/chart-operator-servicemonitors/compare/v0.0.0...v1.0.0
