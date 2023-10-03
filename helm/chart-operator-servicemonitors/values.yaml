@@ -3,6 +3,7 @@ team: honeybadger
 disabled: false
 
 operator:
+  name: "chart-operator"
   scrapeInterval: 60s
   scrapeTimeout: 45s
   targetPort: "8000"

@@ -11,6 +11,9 @@
                 "metricRelabelings": {
                     "type": "object"
                 },
+                "name": {
+                    "type": "string"
+                },
                 "relabelings": {
                     "type": "object"
                 },
