@@ -1,0 +1,15 @@
+team: honeybadger
+
+monitoring:
+  serviceMonitors:
+    operator:
+      enabled: true
+      name: "chart-operator"
+      scrapeInterval: 60s
+      scrapeTimeout: 45s
+      targetPort: "8000"
+      relabelings: {}
+      metricRelabelings: {}
+      selectors:
+        app: chart-operator
+        app.kubernetes.io/name: chart-operator
