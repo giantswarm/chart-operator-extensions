@@ -1,0 +1,30 @@
+{{- if not .Values.monitoring.serviceMonitors.operator.enabled }}
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  labels:
+    {{- include "chart-operator-extensions.labels" . | nindent 4 }}
+  name: {{ .Values.monitoring.serviceMonitors.operator.name }}
+  namespace: giantswarm
+spec:
+  endpoints:
+  - honorLabels: true
+    interval: {{ .Values.monitoring.serviceMonitors.operator.scrapeInterval }}
+    path: /metrics
+    targetPort: {{ .Values.monitoring.serviceMonitors.operator.targetPort }}
+    scrapeTimeout: {{ .Values.monitoring.serviceMonitors.operator.scrapeTimeout }}
+    {{- if .Values.monitoring.serviceMonitors.operator.metricRelabelings }}
+    metricRelabelings:
+    {{- tpl (toYaml .Values.monitoring.serviceMonitors.operator.metricRelabelings | nindent 4) . }}
+    {{- end }}
+    {{- if .Values.monitoring.serviceMonitors.operator.relabelings }}
+    relabelings:
+    {{- tpl (toYaml .Values.monitoring.serviceMonitors.operator.relabelings | nindent 4) . }}
+    {{- end }}
+  namespaceSelector:
+    matchNames:
+      - giantswarm
+  selector:
+    matchLabels:
+      {{- tpl (toYaml .Values.monitoring.serviceMonitors.operator.selectors | nindent 6) . }}
+{{- end }}

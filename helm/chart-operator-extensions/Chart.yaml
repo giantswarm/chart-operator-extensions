@@ -1,11 +1,11 @@
 apiVersion: v2
 description: Chart Operator ServiceMonitors
-name: chart-operator-servicemonitors
+name: chart-operator-extensions
 version: 1.0.1
 appVersion: 1.0.0
 annotations:
   application.giantswarm.io/team: "honeybadger"
-home: https://github.com/giantswarm/chart-operator-servicemonitors
+home: https://github.com/giantswarm/chart-operator-extensions
 keywords:
   - monitoring
 restrictions:
