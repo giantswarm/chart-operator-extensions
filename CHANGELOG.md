@@ -9,6 +9,8 @@ and this project's packages adheres to [Semantic Versioning](http://semver.org/s
 
 ## [1.1.1] - 2023-10-04
 
+## [1.1.1] - 2023-10-04
+
 ## [1.1.0] - 2023-10-04
 
 ### Changed
@@ -28,6 +30,7 @@ and this project's packages adheres to [Semantic Versioning](http://semver.org/s
 - Create ServiceMonitors to scrape `chart-operator`
 
 [Unreleased]: https://github.com/giantswarm/chart-operator-extensions/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/giantswarm/chart-operator-extensions/compare/v1.1.1...v1.1.1
 [1.1.1]: https://github.com/giantswarm/chart-operator-extensions/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/giantswarm/chart-operator-extensions/compare/v0.0.1...v1.1.0
 [1.0.1]: https://github.com/giantswarm/chart-operator-extensions/compare/v1.0.0...v0.0.1
