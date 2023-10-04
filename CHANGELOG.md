@@ -9,7 +9,9 @@ and this project's packages adheres to [Semantic Versioning](http://semver.org/s
 
 ## [1.1.1] - 2023-10-04
 
-## [1.1.1] - 2023-10-04
+### Fixed
+
+- Fixed condition on service monitor resource
 
 ## [1.1.0] - 2023-10-04
 
