@@ -9,7 +9,15 @@ and this project's packages adheres to [Semantic Versioning](http://semver.org/s
 
 ## [1.1.0] - 2023-10-04
 
+### Changed
+
+- Renamed project from `chart-operator-servicemonitors` to `chart-operator-extensions`
+
 ## [1.0.1] - 2023-10-03
+
+### Changed
+
+- Small cosmetic updates to Chart values
 
 ## [1.0.0] - 2023-10-03
 
