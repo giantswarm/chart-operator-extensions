@@ -13,3 +13,4 @@ restrictions:
   namespaceSingleton: true
   fixedNamespace: giantswarm
 type: application
+icon: https://s.giantswarm.io/app-icons/giantswarm/1/light.svg
