@@ -4,13 +4,12 @@ name: chart-operator-extensions
 version: 1.1.2
 appVersion: 1.0.0
 annotations:
-  application.giantswarm.io/team: "honeybadger"
+  io.giantswarm.application.restrictions.cluster-singleton: 'true'
+  io.giantswarm.application.restrictions.fixed-namespace: giantswarm
+  io.giantswarm.application.restrictions.namespace-singleton: 'true'
+  io.giantswarm.application.team: honeybadger
 home: https://github.com/giantswarm/chart-operator-extensions
 keywords:
-  - monitoring
-restrictions:
-  clusterSingleton: true
-  namespaceSingleton: true
-  fixedNamespace: giantswarm
+- monitoring
 type: application
 icon: https://s.giantswarm.io/app-icons/giantswarm/1/light.svg
