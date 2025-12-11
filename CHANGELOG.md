@@ -10,7 +10,6 @@ and this project's packages adheres to [Semantic Versioning](http://semver.org/s
 ### Changed
 
 - Migrate Chart.yaml annotations to new format as per https://docs.giantswarm.io/reference/platform-api/chart-metadata/
-
 ## [1.1.2] - 2024-01-29
 
 ### Fixed
@@ -42,7 +41,6 @@ and this project's packages adheres to [Semantic Versioning](http://semver.org/s
 - Create ServiceMonitors to scrape `chart-operator`
 
 [Unreleased]: https://github.com/giantswarm/chart-operator-extensions/compare/v1.1.2...HEAD
-
 [1.1.2]: https://github.com/giantswarm/chart-operator-extensions/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/giantswarm/chart-operator-extensions/compare/v1.1.1...v1.1.1
 [1.1.1]: https://github.com/giantswarm/chart-operator-extensions/compare/v1.1.0...v1.1.1
